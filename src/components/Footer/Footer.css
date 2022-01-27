@@ -1,0 +1,29 @@
+.footer__info {
+    color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+.footer__page {
+    text-align: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.privacy__link {
+    text-decoration: none;
+    color: #ffc300;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.tos__link {
+    text-decoration: none;
+    color: #ffc300;
+}
+.tos__link:hover {
+    color: #fff;
+}
+.privacy__link:hover {
+    color: #fff;
+}
