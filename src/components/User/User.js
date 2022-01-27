@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Images from '../Images/Images';
 
@@ -15,7 +15,7 @@ const User = () => {
             <Row>
                 {users.map((user) => {
                     return (
-                        <div key={user.id} className="col-lg-4">
+                        <Col key={user.id} md={4} lg={4} sm={12} xs={12}>
                             <div className="card mt-3 text-decoration-none">
                                 <Link className="text-decoration-none" to={`/user/${user.id}`}>
                                     <Images ids={user.id} />
@@ -24,7 +24,7 @@ const User = () => {
                                     </span>
                                 </Link>
                             </div>
-                        </div>
+                        </Col>
                     );
                 })}
             </Row>
