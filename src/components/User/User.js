@@ -15,7 +15,7 @@ const User = () => {
             <Row>
                 {users.map((user) => {
                     return (
-                        <Col key={user.id} md={4} lg={4} sm={12} xs={12}>
+                        <Col key={user.id} md={4}>
                             <div className="card mt-3 text-decoration-none">
                                 <Link className="text-decoration-none" to={`/user/${user.id}`}>
                                     <Images ids={user.id} />
